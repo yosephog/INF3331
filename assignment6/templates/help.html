@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module temperature_co2_plotter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+   <a href="/"> Back. </a>e
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>temperature_co2_plotter</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/yoseph/assignment6/temperature_co2_plotter.py">/home/yoseph/assignment6/temperature_co2_plotter.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-plot_co2"><strong>plot_co2</strong></a>(year_from, year_to)</dt><dd><tt>This&nbsp;method&nbsp;plots&nbsp;a&nbsp;jpg&nbsp;file&nbsp;and&nbsp;save&nbsp;it<br>
+&nbsp;in&nbsp;a&nbsp;static&nbsp;folder&nbsp;in&nbsp;the&nbsp;present&nbsp;direcotry<br>
+Parameters-:<br>
+year_from:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;year&nbsp;from&nbsp;to&nbsp;be&nbsp;plotted&nbsp;that&nbsp;is&nbsp;the&nbsp;start&nbsp;year<br>
+&nbsp;year_to:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;year&nbsp;up&nbsp;to&nbsp;be&nbsp;plotted<br>
+&nbsp;x_axis-:&nbsp;str<br>
+&nbsp;&nbsp;the&nbsp;one&nbsp;to&nbsp;be&nbsp;the&nbsp;x&nbsp;axis&nbsp;when&nbsp;plotted</tt></dd></dl>
+ <dl><dt><a name="-plot_co2_by_country"><strong>plot_co2_by_country</strong></a>(year, lower_threshold, upper_threshold)</dt><dd><tt>This&nbsp;method&nbsp;plots&nbsp;a&nbsp;jpg&nbsp;file&nbsp;and&nbsp;save&nbsp;it<br>
+in&nbsp;a&nbsp;static&nbsp;folder&nbsp;in&nbsp;the&nbsp;present&nbsp;direcotry<br>
+x_axis&nbsp;is&nbsp;choosen&nbsp;to&nbsp;be&nbsp;country&nbsp;code.&nbsp;this&nbsp;is&nbsp;becuase<br>
+it&nbsp;is&nbsp;preferable&nbsp;and&nbsp;display&nbsp;the&nbsp;plot&nbsp;in&nbsp;a&nbsp;meaning&nbsp;ful&nbsp;way.<br>
+&nbsp;<br>
+type&nbsp;plot&nbsp;is&nbsp;bar<br>
+Parameters-:<br>
+year:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;year&nbsp;to&nbsp;be&nbsp;plotted<br>
+lower_threshold:<br>
+&nbsp;the&nbsp;lower&nbsp;amount&nbsp;of&nbsp;co2&nbsp;that&nbsp;can&nbsp;be&nbsp;included&nbsp;in&nbsp;the&nbsp;plot<br>
+&nbsp;upper_threshold:<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;higher&nbsp;amount&nbsp;of&nbsp;co2&nbsp;that&nbsp;can&nbsp;be&nbsp;included&nbsp;in&nbsp;the&nbsp;plot</tt></dd></dl>
+ <dl><dt><a name="-plot_temprature"><strong>plot_temprature</strong></a>(month, year_from, year_to, temp_from, temp_to)</dt><dd><tt>This&nbsp;method&nbsp;plots&nbsp;by&nbsp;using&nbsp;the&nbsp;read_temprature&nbsp;method&nbsp;and&nbsp;save<br>
+the&nbsp;plot&nbsp;in&nbsp;a&nbsp;a&nbsp;folder&nbsp;called&nbsp;static&nbsp;at&nbsp;the&nbsp;present&nbsp;directory.<br>
+Parameters-:<br>
+month:&nbsp;str<br>
+&nbsp;&nbsp;the&nbsp;month&nbsp;to&nbsp;be&nbsp;plotted<br>
+year_from:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;year&nbsp;from&nbsp;to&nbsp;be&nbsp;plotted&nbsp;that&nbsp;is&nbsp;the&nbsp;start&nbsp;year<br>
+&nbsp;year_to:<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;year&nbsp;up&nbsp;to&nbsp;be&nbsp;plotted<br>
+&nbsp;temp_from:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;minimum&nbsp;amount&nbsp;of&nbsp;temperature&nbsp;to&nbsp;be&nbsp;plotted<br>
+&nbsp;temp_to:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;maximum&nbsp;amount&nbsp;of&nbsp;teperature&nbsp;to&nbsp;be&nbsp;plotted</tt></dd></dl>
+ <dl><dt><a name="-read_co2"><strong>read_co2</strong></a>(year_from, year_to)</dt><dd><tt>This&nbsp;method&nbsp;read&nbsp;a&nbsp;co2&nbsp;.csv&nbsp;file&nbsp;and&nbsp;returns<br>
+a&nbsp;data&nbsp;fram&nbsp;that&nbsp;is&nbsp;parsed&nbsp;according&nbsp;to&nbsp;the&nbsp;given&nbsp;paramenters<br>
+Parameters-:<br>
+year_from:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;year&nbsp;from&nbsp;to&nbsp;be&nbsp;plotted&nbsp;that&nbsp;is&nbsp;the&nbsp;start&nbsp;year<br>
+&nbsp;year_to:<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;year&nbsp;up&nbsp;to&nbsp;be&nbsp;plotted<br>
+&nbsp;<br>
+return-:<br>
+&nbsp;&nbsp;returns&nbsp;a&nbsp;data&nbsp;frame&nbsp;that&nbsp;is&nbsp;parsed&nbsp;that&nbsp;fills&nbsp;the&nbsp;Parameters<br>
+&nbsp;&nbsp;that&nbsp;was&nbsp;given.</tt></dd></dl>
+ <dl><dt><a name="-read_co2_country"><strong>read_co2_country</strong></a>(year, lower_threshold, upper_threshold)</dt><dd><tt>This&nbsp;method&nbsp;read&nbsp;a&nbsp;co2_by_country&nbsp;.csv&nbsp;file&nbsp;and&nbsp;returns<br>
+a&nbsp;data&nbsp;fram&nbsp;that&nbsp;is&nbsp;parsed&nbsp;according&nbsp;to&nbsp;the&nbsp;given&nbsp;paramenters<br>
+Parameters-:<br>
+year:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;year&nbsp;to&nbsp;be&nbsp;plotted<br>
+lower_threshold:<br>
+&nbsp;the&nbsp;lower&nbsp;amount&nbsp;of&nbsp;co2&nbsp;that&nbsp;can&nbsp;be&nbsp;included&nbsp;in&nbsp;the&nbsp;plot<br>
+&nbsp;upper_threshold:<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;higher&nbsp;amount&nbsp;of&nbsp;co2&nbsp;that&nbsp;can&nbsp;be&nbsp;included&nbsp;in&nbsp;the&nbsp;plot<br>
+return-:<br>
+&nbsp;&nbsp;returns&nbsp;a&nbsp;data&nbsp;frame&nbsp;that&nbsp;is&nbsp;parsed&nbsp;that&nbsp;fills&nbsp;the&nbsp;Parameters<br>
+&nbsp;&nbsp;that&nbsp;was&nbsp;given.</tt></dd></dl>
+ <dl><dt><a name="-read_temprature"><strong>read_temprature</strong></a>(month, year_from, year_to, temp_from, temp_to)</dt><dd><tt>This&nbsp;method&nbsp;read&nbsp;a&nbsp;temperature&nbsp;.csv&nbsp;file&nbsp;and&nbsp;returns<br>
+a&nbsp;data&nbsp;fram&nbsp;that&nbsp;is&nbsp;parsed&nbsp;according&nbsp;to&nbsp;the&nbsp;given&nbsp;paramenters<br>
+Parameters-:<br>
+month:&nbsp;str<br>
+&nbsp;&nbsp;the&nbsp;month&nbsp;to&nbsp;be&nbsp;plotted<br>
+year_from:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;year&nbsp;from&nbsp;to&nbsp;be&nbsp;plotted&nbsp;that&nbsp;is&nbsp;the&nbsp;start&nbsp;year<br>
+&nbsp;year_to:<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;year&nbsp;up&nbsp;to&nbsp;be&nbsp;plotted<br>
+&nbsp;temp_from:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;the&nbsp;minimum&nbsp;amount&nbsp;of&nbsp;temperature&nbsp;to&nbsp;be&nbsp;plotted<br>
+&nbsp;temp_to:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;maximum&nbsp;amount&nbsp;of&nbsp;teperature&nbsp;to&nbsp;be&nbsp;plotted<br>
+&nbsp;<br>
+return-:<br>
+&nbsp;&nbsp;returns&nbsp;a&nbsp;data&nbsp;frame&nbsp;that&nbsp;is&nbsp;parsed&nbsp;that&nbsp;fills&nbsp;the&nbsp;Parameters<br>
+&nbsp;&nbsp;that&nbsp;was&nbsp;given.</tt></dd></dl>
+</td></tr></table>
+</body></html>

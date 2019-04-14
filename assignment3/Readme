@@ -1,0 +1,19 @@
+
+--: My script can be runed as stated in the assignment.
+  wc.py can be run in three ways 
+  python wc.py myfile
+  python wc.py *
+  python wc.py *.py
+ the assignment stated that the word,line and space count should be in a
+single line. but i made it in a way little readable. it displays the file
+name that is read,the counts and everything in a readable way.
+
+  complex.py can be run normally by
+   python complex.py
+  i have a couple of test at the bottom that i have used to check my functions.
+
+  test_complex.py can be runed as
+   pytest test_complex.py
+
+ps-: there are a lot of commants in my file that are not necessary. but it was
+stated in the assignment to comment them and that is why.

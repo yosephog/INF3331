@@ -1,0 +1,8 @@
+
+the way in order to use my program is explained in the pydoc.
+
+i never check for empty data frame when plotting. that is if one
+want to plot temperature for january, it would give an error if one
+choose temperature between 20 and 25.
+
+the same with the rest.

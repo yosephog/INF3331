@@ -1,0 +1,13 @@
+
+i have a my_modul.py file that contains all the function that
+i have implemented. this help me when comparing between python and numpy.
+
+but above all i used it for my mandelbrot.py. the script only have the
+argument parser and it calls on the function/methods from the my_modul.py
+
+i have a brief explanation of things that i have assumed mainly on the 
+test_mandelbrot.py
+
+i have uploded the package for setup.py with the __init__.py and 
+compute_mandelbrot.py. since my setup.py have a package name i thought
+it would be necessary.

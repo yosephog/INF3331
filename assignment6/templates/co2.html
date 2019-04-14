@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CO2 plot</title>
+
+</head>
+
+<body >
+    <h1> CO2 plot</h1>
+    <p> please enter your choices </p>
+    <br>
+    <a href="/"> Back. </a>
+    <form action='/handle_co2' method='POST'>
+      StartYear:
+      <br>
+      <input type='text' name='year_from'>
+      <br>
+      End Year:
+      <br>
+      <input type='text' name="year_to">
+      <br>
+
+      <input type="submit" value='Submit'>
+      <br>
+    <img src="{{url_for('static', filename='co2_plot.jpg')}}" />
+      </form>
+     <br>
+     <a href="/"> Back. </a>
+</body>
+
+</html>

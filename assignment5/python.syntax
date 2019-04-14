@@ -1,0 +1,9 @@
+"\bclass\s": class
+"(\A|\s)import\s": import
+"[\A\s]print": print
+"[\A\s]for\b": for
+"[\A\s]while\b": while
+"[\A\s](if|elif|else)\b": if/elif/else
+"\b(True|False|None)\b": True/False/None
+"def\s": function
+"Try:|except" try/except

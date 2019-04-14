@@ -1,0 +1,9 @@
+"class\s": class
+"String\s|int\s|void\s|double\s|boolean\s": variable
+"if|else\sif|else": conditions
+"while|for|do": loops
+"public\s|private\s|static\s|return\s|final\s|import\s": types
+"break|continue": brek/continue
+"\b[A-Z]\B\w+": calls
+"try|catch": exceptions
+"true|false": boolean

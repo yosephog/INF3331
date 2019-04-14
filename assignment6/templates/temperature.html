@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> temperature plot </title>
+    <
+</head>
+
+<body>
+    <h1> Temperature plot </h1>
+      <a href="/"> Back. </a> <br><br>
+    <form action='/handle_temperature' method='POST'>
+
+      <select name="month">
+   <option value="January">January</option>
+   <option value="February">February</option>
+   <option value="March">March</option>
+   <option value="April">April</option>
+   <option value="May">May</option>
+   <option value="June">June</option>
+   <option value="July">July</option>
+   <option value="August">August</option>
+   <option value="September">September</option>
+   <option value="October">October</option>
+   <option value="November">November</option>
+   <option value="December">December</option>
+ </select>
+    <br>
+    StartYear:
+    <br>
+    <input type='text' name='year_from'>
+    <br>
+    End Year:
+    <br>
+    <input type='text' name="year_to">
+    <br>
+    Minimum Temperature: <br>
+    <input type='text' name='temp_from'> <br>
+    Maximum Temperature: <br>
+    <input type='text' name='temp_to'> <br> <br>
+
+
+
+      <input type="submit" value='Submit'>
+      <br>
+      <img src="{{url_for('static', filename='temperature_plot.jpg')}}" />
+
+      </form>
+
+      <br>
+      <a href="/"> Back. </a>
+      <br>
+</body>
+
+</html>

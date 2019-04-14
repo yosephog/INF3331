@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CO2 by country plot</title>
+
+</head>
+
+<body >
+    <h1> CO2 by country plot</h1>
+    <p> please enter your choices </p>
+    <br>
+    <a href="/"> Back. </a>
+    <form action='/handle_co2_by_country' method='POST'>
+      Year:
+      <br>
+      <input type='text' name='year'>
+      <br>
+      Lower Threshold:
+      <br>
+      <input type='text' name="lower_threshold">
+      <br>
+      Upper Threshold:
+      <br>
+      <input type='text' name="upper_threshold">
+      <br>
+
+      <input type="submit" value='Submit'>
+      <br>
+    <img src="{{url_for('static', filename='co2_by_country_plot.jpg')}}" />
+      </form>
+     <br>
+     <a href="/"> Back. </a>
+</body>
+
+</html>
